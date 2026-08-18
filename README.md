@@ -1,6 +1,6 @@
 # SteeraMed-bench
 
-> A module-panel evaluation benchmark for network-proximity-based drug repurposing in aging.
+> A module-panel evaluation benchmark for drug repurposing — building human-scale representations for virtual patients.
 
 [![Website](https://img.shields.io/badge/website-steeramed.com-0aa06e)](https://steeramed.com)
 [![Live demo](https://img.shields.io/badge/demo-steeramed.com/bench-1c7ed6)](https://steeramed.com/bench)
@@ -9,27 +9,41 @@
 
 ## What is SteeraMed?
 
-SteeraMed is a **module-panel framework for drug repurposing in aging**,
-developed by [DeepoMe](https://deepome.com).  It scores **1,916 drugs**
-against a curated atlas of **332 aging-relevant modules** using the Guney
+**SteeraMed Bench** is a framework for **evaluating module panels** built
+from a **332-module atlas**, developed by [DeepoMe](https://deepome.com).
+The atlas combines extended aging hallmarks, traditional Chinese medicine
+syndrome proxies, nutraceutical targets, and food-as-medicine targets.
+It scores **1,916 drugs** against every module using the Guney
 network-proximity metric on the STRING v12 interactome, then asks one
-question: *which module panels rank the approved drugs for a disease at
-the top?*  Combining all 332 modules into one panel reaches **Recall@20 =
-0.524** averaged over five benchmark diseases (individual families:
-Hallmarks 0.433, NUT 0.494, YFY 0.403, TCM 0.324) — versus 0.05 when
-drug–module pairings are permuted (permutation null; Table 1 null range
-0.01–0.07 across all panels).
+question: *which module panels best recover the approved drugs for each
+disease?*
 
-**SteeraMed-bench** is the reproducibility companion: a dependency-light
-Python package plus pre-computed data that reproduces every panel result
-in the paper's Table 1 and lets you evaluate **your own module panels**
-under the exact same protocol.  You can also explore the atlas and try
-panel evaluation directly in the browser: **<https://steeramed.com/bench>**
+Across five chronic disease tasks, the full atlas reaches **Recall@20 =
+0.524**, and the nutraceutical panel including extensions (**NUT+NUTX,
+117 modules**) reaches **0.494** — both far above the column-permutation
+null (0.017–0.032 in the paper's Table 1; 0.01–0.07 across panels in
+this package's reproduction). No single panel wins everywhere: the atlas
+works as a **panel-selection system**, exposing which biological
+organization is most useful for each disease — hallmarks for type 2
+diabetes and osteoporosis, food-as-medicine for depression, nutraceutical
+modules for atherosclerosis/hyperlipidemia. As the paper reports, these
+standard-CV numbers are within-benchmark estimates: performance decreases
+under target-family-separated evaluation and approaches chance under
+leave-one-disease-out evaluation.
+
+**SteeraMed-bench** (this package) is the reproducibility companion: a
+dependency-light Python package plus pre-computed data that reproduces
+the paper's Table 1 panel results (via the predefined panels and the
+custom-module entry point) and lets you evaluate **your own module
+panels** under the exact same protocol. You can also explore the atlas
+and try panel evaluation directly in the browser:
+**<https://steeramed.com/bench>**
 
 ## The 332-module atlas
 
-The benchmark is organized around five module families covering
-complementary angles of aging biology and interventions:
+The benchmark is organized around five module families — four knowledge
+paradigms in the paper (nutraceutical and its extensions count as one) —
+covering complementary angles of aging biology and interventions:
 
 | Family | Modules | What it captures |
 |--------|---------|------------------|
@@ -156,21 +170,26 @@ in aggregated form only.
 | `TCM_NUT` | 118 | TCM + nutrient combination |
 | `ALL` | 332 | Full module atlas |
 
-Reference Recall@20 values (averaged over 5 diseases, Table 1):
+Reference Recall@20 values (averaged over 5 diseases; paper Table 1 rows
+shown for comparison — note the paper's nutraceutical row is the combined
+**NUT+NUTX (117)** panel, evaluated here via the custom-module entry point):
 
 ```
-Panel       Recall@20    Paper
-HALLMARKS     0.433       0.433
-TCM           0.324       0.324
-NUT           0.494       0.494
-FAM           0.403       0.403
-ALL           0.524       0.524
+Panel            Recall@20    Paper Table 1
+HALLMARKS          0.433         0.433
+TCM                0.324         0.324
+NUT (80)           0.494           —
+NUT+NUTX (117)       —           0.494
+FAM                0.403           —
+ALL                0.524         0.524
 ```
 
-The evaluation protocol follows Table 1 exactly: stratified 5-fold
-cross-validated logistic regression (`C=0.1`, seeds 42/123/456) produces
-out-of-fold drug scores, and Recall@20 uses the capped denominator
-`min(20, n_positives)`.
+The panel-evaluation protocol follows the paper (Table 1): stratified
+5-fold cross-validated logistic regression (`C=0.1`, seeds 42/123/456)
+produces out-of-fold drug scores, and Recall@20 uses the capped
+denominator `min(20, n_positives)`. The permutation-null runs use this
+package's own column-permutation implementation (see the null note in the
+intro), so null values may differ slightly from the paper's Table 1.
 
 ---
 
@@ -192,13 +211,22 @@ python examples/01_reproduce_table1.py
 This package is the reproducibility companion to:
 
 > Xiong, J.; Xia, Q. [*Toward a Self-Learning AI Agent for Drug Repurposing:
-> Building Human-Scale Representations for Virtual Patients*](https://doi.org/10.20944/preprints202608.0998.v1). Preprints, 2026.
+> Building Human-Scale Representations for Virtual Patients*](https://www.preprints.org/manuscript/202608.0998).
+> Preprints, 2026.
 > DOI: [10.20944/preprints202608.0998.v1](https://doi.org/10.20944/preprints202608.0998.v1)
 
-It implements the **panel evaluation** and **custom module-panel**
-workflows.  The Agent-based module discovery (LLM-driven), the module
-gene-set definitions, and the full STRING-proximity re-computation are out
-of scope for this release; see the paper for details.
+In the paper, SteeraMed Bench is the evaluation framework that tests
+whether module panels — human-scale biological directions drawn from four
+knowledge paradigms — can prioritize known drug–disease relationships,
+laying the coordinate foundation for virtual patients and future
+self-learning agents.
+
+This package implements the **panel evaluation** and **custom
+module-panel** workflows of that framework. The LLM-assisted agent loop
+for proposing new modules, the module gene-set definitions, the
+23-disease-category extension, and the full STRING-proximity
+re-computation are out of scope for this release; see the paper for
+details.
 
 ---
 
@@ -208,7 +236,7 @@ of scope for this release; see the paper for details.
 |----------|-----|
 | Website | <https://steeramed.com> |
 | Live benchmark demo | <https://steeramed.com/bench> |
-| Paper | [Read the paper](https://doi.org/10.20944/preprints202608.0998.v1) ([Preprints page](https://www.preprints.org/manuscript/202608.0998/v1)) |
+| Paper | [Read the paper](https://www.preprints.org/manuscript/202608.0998) ([DOI](https://doi.org/10.20944/preprints202608.0998.v1)) |
 | Data downloads | [GitHub Releases](https://github.com/DeepoMe/SteeraMed-bench/releases) |
 | DeepoMe | <https://deepome.com> |
 
