@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "SteeraMed-bench: A module-panel evaluation benchmark for drug repurposing — building human-scale representations for virtual patients"
+title: "SteeraMed-bench: A module-panel evaluation benchmark for drug repurposing (332 modules, 1,916 drugs)"
 message: "If you use SteeraMed-bench in your research, please cite the software and the accompanying paper."
 type: software
 authors:

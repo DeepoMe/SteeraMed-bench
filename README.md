@@ -1,6 +1,6 @@
 # SteeraMed-bench
 
-> A module-panel evaluation benchmark for drug repurposing — building human-scale representations for virtual patients.
+> A module-panel evaluation benchmark for drug repurposing — 332 modules, 1,916 drugs, five knowledge families.
 
 [![Website](https://img.shields.io/badge/website-steeramed.com-0aa06e)](https://steeramed.com)
 [![Live demo](https://img.shields.io/badge/demo-steeramed.com/bench-1c7ed6)](https://steeramed.com/bench)
@@ -262,8 +262,7 @@ This package is the reproducibility companion to:
 In the paper, SteeraMed Bench is the evaluation framework that tests
 whether module panels — human-scale biological directions drawn from four
 knowledge paradigms — can prioritize known drug–disease relationships,
-laying the coordinate foundation for virtual patients and future
-self-learning agents.
+laying the coordinate foundation for future self-learning agents.
 
 This package implements the **panel evaluation** and **custom
 module-panel** workflows of that framework. The LLM-assisted agent loop
