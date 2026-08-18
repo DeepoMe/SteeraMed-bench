@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "SteeraMed-bench: Module-Panel Benchmark for Drug Repurposing in Aging"
+message: "If you use SteeraMed-bench in your research, please cite the software and the accompanying paper."
+type: software
+authors:
+  - alias: "DeepoMe Team"
+license: MIT
+repository-code: "https://github.com/DeepoMe/SteeraMed-bench"
+url: "https://steeramed.com/bench"
+version: "0.1.0"
+date-released: "2026-08-06"
+keywords:
+  - drug repurposing
+  - aging
+  - network proximity
+  - module panel
+  - benchmark
+preferred-citation:
+  type: article
+  title: "SteeraMed: A Module-Panel Framework for Network-Proximity-Based Drug Repurposing in Aging"
+  authors:
+    - alias: "DeepoMe Team"
+  doi: "10.20944/preprints202605.1578.v1"
+  year: 2026
+  publisher:
+    name: "Preprints"
+  url: "https://doi.org/10.20944/preprints202605.1578.v1"
