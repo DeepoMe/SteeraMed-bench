@@ -7,6 +7,11 @@
 [![Paper](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202608.0998-a8555e)](https://doi.org/10.20944/preprints202608.0998.v1)
 [![License: MIT](https://img.shields.io/badge/license-MIT-343a40)](LICENSE)
 
+<p align="center">
+  <img src="docs/images/concept_bench_instrument.png" width="440" alt="SteeraMed Bench concept illustration">
+</p>
+<details><summary><sub>Concept illustration (AI-generated, not a paper figure)</sub></details>
+
 ## What is SteeraMed?
 
 **SteeraMed Bench** is a framework for **evaluating module panels** built
@@ -39,6 +44,18 @@ panels** under the exact same protocol. You can also explore the atlas
 and try panel evaluation directly in the browser:
 **<https://steeramed.com/bench>**
 
+<p align="center">
+  <img src="docs/images/fig1_overview.png" width="760" alt="SteeraMed Bench module-panel evaluation workflow (paper Figure 1)">
+</p>
+
+*The framework as a whole (paper, Figure 1): curated module sources are
+assembled into a 332-axis module library; an LLM-assisted workflow
+proposes and revises candidate gene sets, scored for incremental
+benchmark value and redundancy; the benchmark then evaluates predefined
+panels and candidate modules against drug-repurposing tasks. Five
+chronic diseases are the primary case studies; 23 disease categories
+provide the exploratory extension.*
+
 ## The 332-module atlas
 
 The benchmark is organized around five module families — four knowledge
@@ -56,6 +73,11 @@ covering complementary angles of aging biology and interventions:
 Every module ships as a **name + pre-computed z-score profile**, so the
 full atlas can be redistributed and evaluated without disclosing any gene
 list (see the policy section below).
+
+<p align="center">
+  <img src="docs/images/concept_module_anatomy.png" width="380" alt="Anatomy of a module (AI-generated illustration)">
+</p>
+<details><summary><sub>Concept illustration: anatomy of a module (AI-generated, not a paper figure)</sub></details>
 
 ## Module-definition policy (minimal definition)
 
@@ -184,6 +206,21 @@ FAM                0.403           —
 ALL                0.524         0.524
 ```
 
+Across the paper's 23 exploratory disease categories, no single panel
+dominates — the atlas works as a **panel-selection system** (paper,
+Figure 2a):
+
+<p align="center">
+  <img src="docs/images/fig2a_panel_heatmap.png" width="760" alt="Recall@20 heatmap, 23 disease categories x 5 panels (paper Figure 2a)">
+</p>
+
+*Recall@20 for 23 disease categories × 5 panels (paper, Figure 2a).
+Hallmarks lead in cancer and osteoporosis, nutraceuticals in analgesic /
+antipsychotic / cardiovascular categories, food-as-medicine in
+depression, TCM in sedative and antiepileptic categories. Per-category
+winners are exploratory; the primary benchmark remains the five
+chronic-disease case studies.*
+
 The panel-evaluation protocol follows the paper (Table 1): stratified
 5-fold cross-validated logistic regression (`C=0.1`, seeds 42/123/456)
 produces out-of-fold drug scores, and Recall@20 uses the capped
@@ -215,6 +252,11 @@ This package is the reproducibility companion to:
 > Preprints, 2026.
 > DOI: [10.20944/preprints202608.0998.v1](https://doi.org/10.20944/preprints202608.0998.v1)
 
+<p align="center">
+  <img src="docs/images/concept_learning_loop.png" width="400" alt="Closed learning loop (AI-generated illustration)">
+</p>
+<details><summary><sub>Concept illustration: the closed learning loop the paper works toward (AI-generated, not a paper figure)</sub></details>
+
 In the paper, SteeraMed Bench is the evaluation framework that tests
 whether module panels — human-scale biological directions drawn from four
 knowledge paradigms — can prioritize known drug–disease relationships,
@@ -245,3 +287,9 @@ details.
 ## License
 
 [MIT](LICENSE) © 2026 DeepoMe
+
+---
+
+## 中文文档 / Chinese README
+
+[阅读简体中文版 README](README_zh.md) · [English README](README.md)
