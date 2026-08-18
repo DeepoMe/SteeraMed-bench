@@ -25,7 +25,7 @@ def main():
 
     # Inventory: 332 modules across five families.
     print("Module families:")
-    for src in ["Hallmarks", "TCM", "NUT", "NUTX", "YFY"]:
+    for src in ["Hallmarks", "TCM", "NUT", "NUTX", "FAM"]:
         print(f"  {src:<10} {len(bench.list_modules(src)):>4} modules")
     print(f"Available diseases: {', '.join(bench.list_diseases())}")
     print()

@@ -68,7 +68,7 @@ covering complementary angles of aging biology and interventions:
 | `TCM:` | 38 | Traditional-Chinese-Medicine modules in three tiers (`T1`–`T3`) |
 | `NUT:` | 80 | Nutrient / dietary-supplement modules — vitamins, minerals, amino acids, cofactors and botanicals (e.g. `NUT:Thiamine`, `NUT:Ginseng`) |
 | `NUTX:` | 37 | Extended nutraceutical modules (e.g. `NUTX:Betaine`) |
-| `YFY:` | 105 | Chinese food-therapy herb modules — one per herb (e.g. `YFY:丁香` clove, `YFY:山药` Chinese yam) |
+| `FAM` | 105 | Food-as-medicine (FAM) herb modules — one per herb (e.g. clove, Chinese yam); module names carry a `YFY:` prefix in the released data files |
 
 Every module ships as a **name + pre-computed z-score profile**, so the
 full atlas can be redistributed and evaluated without disclosing any gene
@@ -98,8 +98,10 @@ symbols.
 
 ## Installation
 
+Install directly from GitHub (not yet on PyPI):
+
 ```bash
-pip install steeramed-bench
+pip install git+https://github.com/DeepoMe/SteeraMed-bench.git
 ```
 
 For development:
@@ -187,7 +189,7 @@ in aggregated form only.
 | `TCM` | 38 | Traditional Chinese Medicine modules |
 | `NUT` | 80 | Nutrient modules |
 | `NUTX` | 37 | Extended nutraceutical modules |
-| `FAM` | 105 | YFY food-therapy herb modules (Chinese herb family) |
+| `FAM` | 105 | Food-as-medicine herb modules (Chinese food-therapy herbs, one per herb) |
 | `HALLMARKS_TCM` | 110 | Hallmarks + TCM combination |
 | `TCM_NUT` | 118 | TCM + nutrient combination |
 | `ALL` | 332 | Full module atlas |

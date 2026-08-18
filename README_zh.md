@@ -86,8 +86,10 @@ LLM 辅助工作流提出并修订候选基因集，按增量基准价值与冗�
 
 ## 安装
 
+直接从 GitHub 安装（尚未上架 PyPI）：
+
 ```bash
-pip install steeramed-bench
+pip install git+https://github.com/DeepoMe/SteeraMed-bench.git
 ```
 
 开发安装：
@@ -170,7 +172,7 @@ bench.list_modules()    # 332 个模块名（无基因列表）
 | `TCM` | 38 | 传统中医模块 |
 | `NUT` | 80 | 营养素模块 |
 | `NUTX` | 37 | 扩展营养素模块 |
-| `FAM` | 105 | YFY 药食同源中药模块（中药家族） |
+| `FAM` | 105 | 药食同源（FAM）中药模块——每味药材一个模块 |
 | `HALLMARKS_TCM` | 110 | Hallmarks + TCM 组合 |
 | `TCM_NUT` | 118 | TCM + 营养素组合 |
 | `ALL` | 332 | 完整模块图谱 |

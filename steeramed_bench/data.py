@@ -137,6 +137,9 @@ class Bench:
     #: files the loader expects to find
     REQUIRED_FILES = tuple(_DATA_FILES)
 
+    #: paper-facing family name -> module-name prefix in the data files
+    _SOURCE_PREFIX_ALIASES = {"FAM": "YFY"}
+
     def __init__(self, data_dir: Optional[os.PathLike] = None):
         if data_dir is None:
             data_dir = os.path.join(
@@ -211,13 +214,13 @@ class Bench:
         """Return module names, optionally filtered by source family.
 
         Sources: ``Hallmarks`` / ``TCM`` / ``NUT`` / ``NUTX`` / ``YFY``.
+        The paper-facing alias ``FAM`` is accepted for the ``YFY`` prefix
+        (food-as-medicine family).
         """
         if source is None:
             return list(self.module_names)
-        return [
-            m for m in self.module_names
-            if m.startswith(f"{source}:")
-        ]
+        prefix = self._SOURCE_PREFIX_ALIASES.get(source, source) + ":"
+        return [m for m in self.module_names if m.startswith(prefix)]
 
     def module_info(self, module_name: str) -> Dict[str, object]:
         """Return the public metadata of one module.
