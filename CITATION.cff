@@ -17,11 +17,14 @@ keywords:
   - benchmark
 preferred-citation:
   type: article
-  title: "SteeraMed: A Module-Panel Framework for Network-Proximity-Based Drug Repurposing in Aging"
+  title: "Toward a Self-Learning AI Agent for Drug Repurposing: Building Human-Scale Representations for Virtual Patients"
   authors:
-    - alias: "DeepoMe Team"
-  doi: "10.20944/preprints202605.1578.v1"
+    - family-names: "Xiong"
+      given-names: "Jianghui"
+    - family-names: "Xia"
+      given-names: "Qianchen"
+  doi: "10.20944/preprints202608.0998.v1"
   year: 2026
   publisher:
     name: "Preprints"
-  url: "https://doi.org/10.20944/preprints202605.1578.v1"
+  url: "https://doi.org/10.20944/preprints202608.0998.v1"

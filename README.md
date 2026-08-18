@@ -4,7 +4,7 @@
 
 [![Website](https://img.shields.io/badge/website-steeramed.com-0aa06e)](https://steeramed.com)
 [![Live demo](https://img.shields.io/badge/demo-steeramed.com/bench-1c7ed6)](https://steeramed.com/bench)
-[![Paper](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202605.1578-a8555e)](https://doi.org/10.20944/preprints202605.1578.v1)
+[![Paper](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202608.0998-a8555e)](https://doi.org/10.20944/preprints202608.0998.v1)
 [![License: MIT](https://img.shields.io/badge/license-MIT-343a40)](LICENSE)
 
 ## What is SteeraMed?
@@ -191,9 +191,9 @@ python examples/01_reproduce_table1.py
 
 This package is the reproducibility companion to:
 
-> DeepoMe. *SteeraMed: A Module-Panel Framework for Network-Proximity-Based
-> Drug Repurposing in Aging.* Preprints, 2026.
-> DOI: [10.20944/preprints202605.1578.v1](https://doi.org/10.20944/preprints202605.1578.v1)
+> Xiong, J.; Xia, Q. *Toward a Self-Learning AI Agent for Drug Repurposing:
+> Building Human-Scale Representations for Virtual Patients.* Preprints, 2026.
+> DOI: [10.20944/preprints202608.0998.v1](https://doi.org/10.20944/preprints202608.0998.v1)
 
 It implements the **panel evaluation** and **custom module-panel**
 workflows.  The Agent-based module discovery (LLM-driven), the module
@@ -208,7 +208,7 @@ of scope for this release; see the paper for details.
 |----------|-----|
 | Website | <https://steeramed.com> |
 | Live benchmark demo | <https://steeramed.com/bench> |
-| Paper (DOI) | <https://doi.org/10.20944/preprints202605.1578.v1> |
+| Paper (DOI) | <https://doi.org/10.20944/preprints202608.0998.v1> |
 | Data downloads | [GitHub Releases](https://github.com/DeepoMe/SteeraMed-bench/releases) |
 | DeepoMe | <https://deepome.com> |
 

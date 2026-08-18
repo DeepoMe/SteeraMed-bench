@@ -32,7 +32,7 @@ dev = ["pytest>=7.0"]
 [project.urls]
 Homepage = "https://steeramed.com"
 Repository = "https://github.com/DeepoMe/SteeraMed-bench"
-Paper = "https://doi.org/10.20944/preprints202605.1578.v1"
+Paper = "https://doi.org/10.20944/preprints202608.0998.v1"
 Demo = "https://steeramed.com/bench"
 Issues = "https://github.com/DeepoMe/SteeraMed-bench/issues"
 
