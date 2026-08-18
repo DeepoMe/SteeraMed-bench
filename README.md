@@ -191,8 +191,8 @@ python examples/01_reproduce_table1.py
 
 This package is the reproducibility companion to:
 
-> Xiong, J.; Xia, Q. *Toward a Self-Learning AI Agent for Drug Repurposing:
-> Building Human-Scale Representations for Virtual Patients.* Preprints, 2026.
+> Xiong, J.; Xia, Q. [*Toward a Self-Learning AI Agent for Drug Repurposing:
+> Building Human-Scale Representations for Virtual Patients*](https://doi.org/10.20944/preprints202608.0998.v1). Preprints, 2026.
 > DOI: [10.20944/preprints202608.0998.v1](https://doi.org/10.20944/preprints202608.0998.v1)
 
 It implements the **panel evaluation** and **custom module-panel**
@@ -208,7 +208,7 @@ of scope for this release; see the paper for details.
 |----------|-----|
 | Website | <https://steeramed.com> |
 | Live benchmark demo | <https://steeramed.com/bench> |
-| Paper (DOI) | <https://doi.org/10.20944/preprints202608.0998.v1> |
+| Paper | [Read the paper](https://doi.org/10.20944/preprints202608.0998.v1) ([Preprints page](https://www.preprints.org/manuscript/202608.0998/v1)) |
 | Data downloads | [GitHub Releases](https://github.com/DeepoMe/SteeraMed-bench/releases) |
 | DeepoMe | <https://deepome.com> |
 
