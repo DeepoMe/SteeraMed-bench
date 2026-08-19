@@ -24,17 +24,40 @@ drug–disease relationships?*
 <p align="center">
   <img src="docs/images/concept_beyond_virtual_cells.png" width="520" alt="From virtual cells to virtual patients">
 </p>
-<details><summary><sub>Beyond virtual cells: the next scale to model is the whole person (AI-generated concept illustration)</sub></details>
+
+**Beyond virtual cells — modeling the human response to intervention.**
+AI is already strong at modeling proteins, generating molecules and
+simulating cellular perturbations. The central opportunity is now shifting:
+not only molecules or cells, but **how a whole person responds to
+intervention**. Virtual patients are the goal — and a useful coordinate
+system of biological directions is the prerequisite. *(AI-generated
+concept illustration)*
 
 <p align="center">
   <img src="docs/images/concept_scale_ladder.png" width="400" alt="Three-step scale ladder of human modeling">
 </p>
-<details><summary><sub>The scale ladder: molecular → cellular → human-scale modeling (AI-generated concept illustration)</sub></details>
+
+**The scale ladder — molecular, cellular, human.**
+Each rung answers a different question: molecular models predict
+interactions, cellular models predict perturbation responses, and
+human-scale models must reason about which biological states matter,
+which patients may respond, and what evidence should guide the next
+intervention decision. SteeraMed Bench is a first, measurable step on
+the third rung. *(AI-generated concept illustration)*
 
 <p align="center">
   <img src="docs/images/concept_gatekeeper.png" width="720" alt="Drug development gatekeeper">
 </p>
-<details><summary><sub>Drug repurposing as the gatekeeper testbed for human-scale representations (AI-generated concept illustration)</sub></details>
+
+**Drug development is gated at the human scale.**
+Drug-development value is won or lost at the clinical gate: a *Nature
+Reviews Drug Discovery* perspective estimates that cutting Phase II
+failure by 20% can save nearly **$900 million** per successful drug
+launch. Drug repurposing compresses this human-scale question into a
+computable benchmark — if a representation of biological directions
+cannot prioritize known drug–disease relationships, it is unlikely to
+support harder intervention decisions. That is the gatekeeper role
+repurposing plays here. *(AI-generated concept illustration)*
 
 ## What is SteeraMed?
 

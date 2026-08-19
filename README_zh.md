@@ -21,17 +21,33 @@
 <p align="center">
   <img src="docs/images/concept_beyond_virtual_cells.png" width="520" alt="从虚拟细胞到虚拟病人">
 </p>
-<details><summary><sub>超越虚拟细胞：下一个待建模的尺度是整个人（AI 生成概念插画）</sub></details>
+
+**超越虚拟细胞——建模"人对干预的响应"。**
+AI 已经能很好地建模蛋白质、生成分子、模拟细胞扰动。重心正在
+转移：不止于分子与细胞，而是**整个人对干预如何响应**。虚拟病人
+是目标——而一套有用的生物方向坐标系是前提。*（AI 生成概念插画）*
 
 <p align="center">
   <img src="docs/images/concept_scale_ladder.png" width="400" alt="人类建模的三步尺度阶梯">
 </p>
-<details><summary><sub>尺度阶梯：分子 → 细胞 → 人类尺度建模（AI 生成概念插画）</sub></details>
+
+**尺度阶梯——分子、细胞、人。**
+每一级回答不同的问题：分子模型预测相互作用，细胞模型预测扰动
+响应，人类尺度模型则要推理"哪些生物状态重要、哪些患者可能响应、
+下一步干预决策需要什么证据"。SteeraMed Bench 是第三级上可度量的
+第一步。*（AI 生成概念插画）*
 
 <p align="center">
   <img src="docs/images/concept_gatekeeper.png" width="720" alt="药物开发守门人">
 </p>
-<details><summary><sub>药物重定位：人类尺度表征的守门人测试床（AI 生成概念插画）</sub></details>
+
+**药物开发在人类尺度处设闸。**
+药物开发的价值在临床闸口赢得或失去：*Nature Reviews Drug
+Discovery* 的一篇展望估计，将 II 期失败率降低 20%，可为每次成功
+上市节省近 **9 亿美元**。药物重定位把这一人尺度问题压缩为可计算
+的基准——如果一套生物方向表征连已知药物–疾病关系都无法优先找回，
+就更难支撑更难的干预决策。这正是重定位在本基准中扮演的"守门人"
+角色。*（AI 生成概念插画）*
 
 ## 什么是 SteeraMed？
 
