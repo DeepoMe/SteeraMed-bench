@@ -281,7 +281,8 @@ This package is the reproducibility companion to:
 In the paper, SteeraMed Bench is the evaluation framework that tests
 whether module panels — human-scale biological directions drawn from four
 knowledge paradigms — can prioritize known drug–disease relationships,
-laying the coordinate foundation for future self-learning agents.
+laying the coordinate foundation for virtual patients and future
+self-learning agents.
 
 This package implements the **panel evaluation** and **custom
 module-panel** workflows of that framework. The LLM-assisted agent loop
