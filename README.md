@@ -34,18 +34,6 @@ system of biological directions is the prerequisite. *(AI-generated
 concept illustration)*
 
 <p align="center">
-  <img src="docs/images/concept_scale_ladder.png" width="400" alt="Three-step scale ladder of human modeling">
-</p>
-
-**The scale ladder — molecular, cellular, human.**
-Each rung answers a different question: molecular models predict
-interactions, cellular models predict perturbation responses, and
-human-scale models must reason about which biological states matter,
-which patients may respond, and what evidence should guide the next
-intervention decision. SteeraMed Bench is a first, measurable step on
-the third rung. *(AI-generated concept illustration)*
-
-<p align="center">
   <img src="docs/images/concept_gatekeeper.png" width="720" alt="Drug development gatekeeper">
 </p>
 

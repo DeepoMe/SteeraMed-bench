@@ -28,16 +28,6 @@ AI 已经能很好地建模蛋白质、生成分子、模拟细胞扰动。重�
 是目标——而一套有用的生物方向坐标系是前提。*（AI 生成概念插画）*
 
 <p align="center">
-  <img src="docs/images/concept_scale_ladder.png" width="400" alt="人类建模的三步尺度阶梯">
-</p>
-
-**尺度阶梯——分子、细胞、人。**
-每一级回答不同的问题：分子模型预测相互作用，细胞模型预测扰动
-响应，人类尺度模型则要推理"哪些生物状态重要、哪些患者可能响应、
-下一步干预决策需要什么证据"。SteeraMed Bench 是第三级上可度量的
-第一步。*（AI 生成概念插画）*
-
-<p align="center">
   <img src="docs/images/concept_gatekeeper.png" width="720" alt="药物开发守门人">
 </p>
 
