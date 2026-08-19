@@ -1,6 +1,6 @@
 # SteeraMed-bench
 
-> 面向药物重定位的模块面板评测基准（module-panel evaluation benchmark）——为虚拟病人构建"人类尺度"的生物学表征。
+> 为**虚拟病人**构建"人类尺度"的生物学表征——以药物重定位为人尺度测试床的模块面板评测基准（332 模块、1,916 药物、五大家族）。
 
 [![Website](https://img.shields.io/badge/website-steeramed.com-0aa06e)](https://steeramed.com)
 [![Live demo](https://img.shields.io/badge/demo-steeramed.com/bench-1c7ed6)](https://steeramed.com/bench)
@@ -9,10 +9,29 @@
 
 [English](README.md) | 简体中文
 
+## 从虚拟细胞到虚拟病人
+
+虚拟病人要先有一套有用的坐标系，才能建模患者特异的动态过程。虚拟细胞
+（virtual cell）计划正在构建分子与细胞尺度；而治疗决策发生在**整个
+人的尺度**、跨越不同形式的干预。SteeraMed Bench 是迈向这一缺失的
+"人类尺度"的先导性工作之一：它以**药物重定位作为人尺度测试床**，
+回答一个虚拟病人的核心问题——*生物方向的结构化表示，能否把干预
+相关知识组织得足以优先找回已知的药物–疾病关系？*
+
 <p align="center">
-  <img src="docs/images/concept_bench_instrument.png" width="440" alt="SteeraMed Bench 概念插画">
+  <img src="docs/images/concept_beyond_virtual_cells.png" width="520" alt="从虚拟细胞到虚拟病人">
 </p>
-<details><summary><sub>概念插画（AI 生成，非论文插图）</sub></details>
+<details><summary><sub>超越虚拟细胞：下一个待建模的尺度是整个人（AI 生成概念插画）</sub></details>
+
+<p align="center">
+  <img src="docs/images/concept_scale_ladder.png" width="400" alt="人类建模的三步尺度阶梯">
+</p>
+<details><summary><sub>尺度阶梯：分子 → 细胞 → 人类尺度建模（AI 生成概念插画）</sub></details>
+
+<p align="center">
+  <img src="docs/images/concept_gatekeeper.png" width="720" alt="药物开发守门人">
+</p>
+<details><summary><sub>药物重定位：人类尺度表征的守门人测试床（AI 生成概念插画）</sub></details>
 
 ## 什么是 SteeraMed？
 
@@ -63,11 +82,6 @@ LLM 辅助工作流提出并修订候选基因集，按增量基准价值与冗�
 
 每个模块仅以**名称 + 预计算 z 分数谱**形式发布，因此完整图谱可以在
 不披露任何基因列表的情况下被分发与评测（见下文政策节）。
-
-<p align="center">
-  <img src="docs/images/concept_module_anatomy.png" width="380" alt="模块的解剖（AI 生成插画）">
-</p>
-<details><summary><sub>概念插画：模块的解剖（AI 生成，非论文插图）</sub></details>
 
 ## 模块定义政策（最小定义）
 

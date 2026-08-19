@@ -1,16 +1,40 @@
 # SteeraMed-bench
 
-> A module-panel evaluation benchmark for drug repurposing — 332 modules, 1,916 drugs, five knowledge families.
+> Building human-scale representations for **virtual patients** — a module-panel
+> evaluation benchmark that uses drug repurposing as its human-scale testbed
+> (332 modules, 1,916 drugs, five knowledge families).
 
 [![Website](https://img.shields.io/badge/website-steeramed.com-0aa06e)](https://steeramed.com)
 [![Live demo](https://img.shields.io/badge/demo-steeramed.com/bench-1c7ed6)](https://steeramed.com/bench)
 [![Paper](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202608.0998-a8555e)](https://doi.org/10.20944/preprints202608.0998.v1)
 [![License: MIT](https://img.shields.io/badge/license-MIT-343a40)](LICENSE)
 
+## From virtual cells to virtual patients
+
+Virtual patients need a useful coordinate system before they can model
+patient-specific dynamics. Virtual-cell programs are building the molecular
+and cellular scales; treatment decisions, however, are made across a
+**whole person** and across different forms of intervention. SteeraMed Bench
+is a pioneering step toward that missing human scale: it uses **drug
+repurposing as a human-scale testbed** for a central virtual-patient
+question — *can a structured representation of biological directions
+organize intervention-relevant knowledge well enough to prioritize known
+drug–disease relationships?*
+
 <p align="center">
-  <img src="docs/images/concept_bench_instrument.png" width="440" alt="SteeraMed Bench concept illustration">
+  <img src="docs/images/concept_beyond_virtual_cells.png" width="520" alt="From virtual cells to virtual patients">
 </p>
-<details><summary><sub>Concept illustration (AI-generated, not a paper figure)</sub></details>
+<details><summary><sub>Beyond virtual cells: the next scale to model is the whole person (AI-generated concept illustration)</sub></details>
+
+<p align="center">
+  <img src="docs/images/concept_scale_ladder.png" width="400" alt="Three-step scale ladder of human modeling">
+</p>
+<details><summary><sub>The scale ladder: molecular → cellular → human-scale modeling (AI-generated concept illustration)</sub></details>
+
+<p align="center">
+  <img src="docs/images/concept_gatekeeper.png" width="720" alt="Drug development gatekeeper">
+</p>
+<details><summary><sub>Drug repurposing as the gatekeeper testbed for human-scale representations (AI-generated concept illustration)</sub></details>
 
 ## What is SteeraMed?
 
@@ -73,11 +97,6 @@ covering complementary angles of aging biology and interventions:
 Every module ships as a **name + pre-computed z-score profile**, so the
 full atlas can be redistributed and evaluated without disclosing any gene
 list (see the policy section below).
-
-<p align="center">
-  <img src="docs/images/concept_module_anatomy.png" width="380" alt="Anatomy of a module (AI-generated illustration)">
-</p>
-<details><summary><sub>Concept illustration: anatomy of a module (AI-generated, not a paper figure)</sub></details>
 
 ## Module-definition policy (minimal definition)
 
