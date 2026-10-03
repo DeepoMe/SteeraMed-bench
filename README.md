@@ -313,7 +313,7 @@ details.
 | Live benchmark demo | <https://steeramed.com/bench> |
 | Paper | [Read the paper](https://www.preprints.org/manuscript/202608.0998/v2) ([DOI](https://doi.org/10.20944/preprints202608.0998.v2)) |
 | alphaXiv discussion | [Join the discussion](https://www.alphaxiv.org/abs/2608.self-learning-ai-drug-repurposing) |
-| Podcast (Chinese) | [Saturday 9:30 — When AI enters longevity medicine](https://www.xiaoyuzhoufm.com/episode/6aa7b8d39d3264778168ed6e) |
+| Audio overview | [Listen on alphaXiv](https://www.alphaxiv.org/abs/2608.self-learning-ai-drug-repurposing#audio) |
 | Data downloads | [GitHub Releases](https://github.com/DeepoMe/SteeraMed-bench/releases) |
 | DeepoMe | <https://deepome.com> |
 
