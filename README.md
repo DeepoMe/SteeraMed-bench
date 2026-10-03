@@ -6,7 +6,8 @@
 
 [![Website](https://img.shields.io/badge/website-steeramed.com-0aa06e)](https://steeramed.com)
 [![Live demo](https://img.shields.io/badge/demo-steeramed.com/bench-1c7ed6)](https://steeramed.com/bench)
-[![Paper](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202608.0998-a8555e)](https://doi.org/10.20944/preprints202608.0998.v1)
+[![Paper](https://img.shields.io/badge/DOI-10.20944%2Fpreprints202608.0998-a8555e)](https://doi.org/10.20944/preprints202608.0998.v2)
+[![alphaXiv](https://img.shields.io/badge/alphaXiv-discussion-16a34a)](https://www.alphaxiv.org/abs/2608.self-learning-ai-drug-repurposing)
 [![License: MIT](https://img.shields.io/badge/license-MIT-343a40)](LICENSE)
 
 ## From virtual cells to virtual patients
@@ -310,7 +311,9 @@ details.
 |----------|-----|
 | Website | <https://steeramed.com> |
 | Live benchmark demo | <https://steeramed.com/bench> |
-| Paper | [Read the paper](https://www.preprints.org/manuscript/202608.0998) ([DOI](https://doi.org/10.20944/preprints202608.0998.v1)) |
+| Paper | [Read the paper](https://www.preprints.org/manuscript/202608.0998/v2) ([DOI](https://doi.org/10.20944/preprints202608.0998.v2)) |
+| alphaXiv discussion | [Join the discussion](https://www.alphaxiv.org/abs/2608.self-learning-ai-drug-repurposing) |
+| Podcast (Chinese) | [Saturday 9:30 — When AI enters longevity medicine](https://www.xiaoyuzhoufm.com/episode/6aa7b8d39d3264778168ed6e) |
 | Data downloads | [GitHub Releases](https://github.com/DeepoMe/SteeraMed-bench/releases) |
 | DeepoMe | <https://deepome.com> |
 
